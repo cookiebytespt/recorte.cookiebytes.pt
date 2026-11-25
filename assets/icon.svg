@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Recorte">
+  <title>Recorte</title>
+  <!-- Coral app tile (macOS icon grid: 824 px body, 100 px margin) -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="#E8553D"/>
+  <!-- White vinyl sticker with the bottom-right corner lifted -->
+  <path d="M332 292 H692 Q732 292 732 332 V590 L590 732 H332 Q292 732 292 692 V332 Q292 292 332 292 Z" fill="#FFFFFF"/>
+  <!-- The R is weeded out of the vinyl, so the tile colour shows through -->
+  <path d="M420 640 V384 H520 A64 64 0 0 1 520 512 H420 M500 512 L560 628" fill="none" stroke="#E8553D" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Peeled corner (back of the vinyl) -->
+  <path d="M732 590 L590 732 Q584 612 590 590 Q612 584 732 590 Z" fill="#EADFD6"/>
+</svg>

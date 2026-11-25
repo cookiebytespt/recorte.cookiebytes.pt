@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recorte — cutting studio for macOS</title>
+<meta name="description" content="Recorte is a native macOS app for vinyl cutters, made for designers. Draw or import artwork, cut vinyl and do Print & Cut with the Liyu GF-1261, without a Windows VM.">
+<link rel="canonical" href="https://recorte.cookiebytes.pt/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://recorte.cookiebytes.pt/">
+<meta property="og:title" content="Recorte — cutting studio for macOS">
+<meta property="og:description" content="A native macOS app for vinyl cutters, made for designers. Cut vinyl and Print & Cut, without a Windows VM.">
+<meta property="og:image" content="https://recorte.cookiebytes.pt/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#E8553D">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#top" aria-label="Recorte">
+      <img src="assets/icon.svg" width="36" height="36" alt="">
+      <span>Recorte</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#cutters" data-i18n="nav.cutters">Cutters</a>
+      <a href="#support" data-i18n="nav.support">Support</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <a class="btn btn--small" href="https://github.com/cookiebytespt/Recorte/releases/latest" data-i18n="nav.download">Download</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Cutting studio for macOS</p>
+    <h1 data-i18n="hero.title">Your vinyl cutter, natively on the Mac.</h1>
+    <p class="lead" data-i18n-html="hero.lead">Recorte is a native macOS app for vinyl cutters, made for designers. Draw or import your artwork, press <kbd>⌘P</kbd>, and it walks you through loading the machine. Print &amp; Cut included, with no Windows VM.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/cookiebytespt/Recorte/releases/latest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+        <span data-i18n="hero.cta">Download for macOS</span>
+      </a>
+      <a class="btn btn--ghost" href="https://github.com/cookiebytespt/Recorte" data-i18n="hero.cta2">View on GitHub</a>
+    </div>
+    <ul class="meta">
+      <li data-i18n="hero.meta1">macOS 14 or later</li>
+      <li data-i18n="hero.meta2">Works today with the Liyu GF-1261</li>
+      <li>English · Português · Français · Español</li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <figure class="stage">
+      <span class="mark mark--tl" aria-hidden="true"></span><span class="mark mark--tr" aria-hidden="true"></span>
+      <span class="mark mark--bl" aria-hidden="true"></span><span class="mark mark--br" aria-hidden="true"></span>
+      <img class="shot" src="assets/screenshots/print-and-cut-editor-dark.webp" width="1500" height="1107" alt="The Recorte editor in dark mode: a Print &amp; Cut sheet with artwork, its cut contour and four registration marks, the drawing toolbar, and a sidebar with canvas size and layers." data-i18n-alt="hero.alt" fetchpriority="high">
+    </figure>
+  </div>
+</section>
+
+<!-- WHAT IT DOES -->
+<section class="what" aria-labelledby="what-h">
+  <div class="wrap">
+    <h2 id="what-h" data-i18n="what.title">From artwork to cut sticker, without leaving the Mac.</h2>
+    <div class="trio">
+      <article class="sticker">
+        <p class="tag">01</p>
+        <h3 data-i18n="what.1.t">Draw or import</h3>
+        <p data-i18n="what.1.d">Recorte opens on an empty canvas. Draw shapes, write text, or bring in Illustrator, PDF, SVG and DXF files as cut lines.</p>
+      </article>
+      <article class="sticker">
+        <p class="tag">02</p>
+        <h3 data-i18n="what.2.t">Cut vinyl</h3>
+        <p data-i18n="what.2.d">Choose the size, copies and material, then follow the steps on screen to load the vinyl and set the origin.</p>
+      </article>
+      <article class="sticker">
+        <p class="tag">03</p>
+        <h3 data-i18n="what.3.t">Print &amp; Cut</h3>
+        <p data-i18n="what.3.d">Print with four registration marks on any printer. The cutter's camera finds them and cuts around the print.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="cutline" aria-hidden="true"></div>
+
+<!-- FEATURES -->
+<section class="features" id="features" aria-labelledby="feat-h">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="feat.eyebrow">Features</p>
+    <h2 id="feat-h" data-i18n="feat.title">Made for designers, not for technicians.</h2>
+
+    <div class="row">
+      <div class="row__text">
+        <h3 data-i18n="feat.a.t">A canvas that works on its own</h3>
+        <p data-i18n="feat.a.d">Rectangle, ellipse, line, polygon, star, freehand and text tools, with every size in millimetres. Text is converted to outlines when cutting, and layers can be hidden or locked.</p>
+        <ul class="ticks">
+          <li data-i18n="feat.a.1">Opens Illustrator (.ai), PDF, SVG and DXF files</li>
+          <li data-i18n="feat.a.2">Edit points, smooth curves and offset lines</li>
+          <li data-i18n-html="feat.a.3">Projects saved as <code>.recorte</code> files</li>
+        </ul>
+      </div>
+      <figure class="row__media">
+        <img class="shot" loading="lazy" src="assets/screenshots/editor.webp" width="1500" height="1025" alt="Recorte's canvas with drawing tools and the layers list." data-i18n-alt="feat.a.alt">
+      </figure>
+    </div>
+
+    <div class="row row--flip">
+      <div class="row__text">
+        <h3 data-i18n="feat.b.t">Print &amp; Cut, with the contour traced for you</h3>
+        <p data-i18n="feat.b.d">Place a PDF, Illustrator, PNG or JPEG file and Create Cut Contour traces its outline at the distance you choose. The marks go around the artwork or at the page edges, and turn red if they fall off the page.</p>
+        <ul class="ticks">
+          <li data-i18n="feat.b.1">Follow the artwork, or use a rectangle or rounded box</li>
+          <li data-i18n="feat.b.2">Cuts out transparent holes inside the image</li>
+          <li data-i18n="feat.b.3">Contours stay editable, point by point</li>
+        </ul>
+      </div>
+      <figure class="row__media">
+        <img class="shot" loading="lazy" src="assets/screenshots/print-and-cut-editor.webp" width="1500" height="1107" alt="A Print &amp; Cut sheet in Recorte: artwork with a cut contour and four registration marks around it." data-i18n-alt="feat.b.alt">
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="row__text">
+        <h3 data-i18n="feat.c.t">One Output sheet for every job</h3>
+        <p data-i18n="feat.c.d">The preview shows the sheet with its marks, the safe area and where the cut starts. Print directly, save a PDF or an image for a print shop, or skip printing when the sheet is already printed.</p>
+        <ul class="ticks">
+          <li data-i18n="feat.c.1">Material presets for speed and pressure</li>
+          <li data-i18n="feat.c.2">Blade offset, overcut and a test cut</li>
+          <li data-i18n="feat.c.3">Copies, mirror for heat-transfer vinyl, Save HPGL</li>
+        </ul>
+      </div>
+      <figure class="row__media">
+        <div class="sheet"><img loading="lazy" src="assets/screenshots/output-print-and-cut.webp" width="1500" height="1038" alt="The Output sheet in Print &amp; Cut mode, with a preview of the printed page and settings for registration marks and printing." data-i18n-alt="feat.c.alt"></div>
+      </figure>
+    </div>
+
+    <div class="row row--flip">
+      <div class="row__text">
+        <h3 data-i18n="feat.d.t">It shows you how to load the machine</h3>
+        <p data-i18n="feat.d.d">After you press Cut, Recorte draws the machine and shows where the sheet goes, where the blade starts and which button to press. If the marks aren't found, you try again with the same sheet, with no reprint.</p>
+      </div>
+      <figure class="row__media">
+        <div class="sheet"><img loading="lazy" src="assets/screenshots/cut-wizard.webp" width="1360" height="864" alt="The cut wizard: a drawing of the Liyu GF-1261 with the printed sheet loaded, and four numbered steps to load the sheet." data-i18n-alt="feat.d.alt"></div>
+      </figure>
+    </div>
+
+    <h3 class="more-h" data-i18n="more.title">Also in the app</h3>
+    <ul class="grid">
+      <li><h4 data-i18n="more.1.t">No drivers</h4><p data-i18n="more.1.d">Recorte finds the cutter on USB and sends the job straight to it. It only sends to the cutter's own USB ID, so a job never goes to a printer by mistake.</p></li>
+      <li><h4 data-i18n="more.2.t">Familiar if you use SignMaster</h4><p data-i18n="more.2.d">The same steps, with plainer names. Help tags give the SignMaster name for each setting.</p></li>
+      <li><h4 data-i18n="more.3.t">Help on every setting</h4><p data-i18n="more.3.d">Hover over any setting to see what it does, or click ⓘ for a short explanation with a drawing.</p></li>
+      <li><h4 data-i18n="more.4.t">Six material presets</h4><p data-i18n="more.4.d">Standard and thick vinyl, heat-transfer vinyl, flock, cardstock and reflective, as starting points for a test cut.</p></li>
+      <li><h4 data-i18n="more.5.t">Four languages</h4><p data-i18n="more.5.d">English, Portuguese, French and Spanish. Recorte follows the language of your Mac.</p></li>
+      <li><h4 data-i18n="more.6.t">Built-in troubleshooting</h4><p data-i18n="more.6.d">A safe connection check and a log file you can send to support when the machine doesn't respond.</p></li>
+    </ul>
+  </div>
+</section>
+
+<div class="cutline" aria-hidden="true"></div>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap how__in">
+    <div>
+      <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+      <h2 id="how-h" data-i18n="how.title">From design to cut sticker in four steps.</h2>
+      <ol class="steps">
+        <li><h3 data-i18n="how.1.t">Connect the machine</h3><p data-i18n="how.1.d">Plug the cutter in with the USB cable and switch it on. No driver and no printer setup.</p></li>
+        <li><h3 data-i18n="how.2.t">Draw or bring in your design</h3><p data-i18n="how.2.d">Draw shapes and write text on the canvas, import cut lines, or place artwork to print.</p></li>
+        <li><h3 data-i18n="how.3.t">Choose Cut or Print &amp; Cut</h3><p data-i18n-html="how.3.d">Cut only cuts shapes out of plain vinyl. Print &amp; Cut prints your artwork with registration marks, then cuts around it. Press <kbd>⌘P</kbd> when you're ready.</p></li>
+        <li><h3 data-i18n="how.4.t">Load the machine and cut</h3><p data-i18n="how.4.d">Recorte shows how to load the vinyl or the printed sheet and where to put the blade. With a new material, make a test cut first.</p></li>
+      </ol>
+    </div>
+    <figure class="how__media">
+      <div class="sheet"><img loading="lazy" src="assets/screenshots/getting-started.webp" width="960" height="962" alt="Recorte's Getting Started window, listing the four steps." data-i18n-alt="how.alt"></div>
+    </figure>
+  </div>
+</section>
+
+<!-- CUTTERS -->
+<section class="cutters" id="cutters" aria-labelledby="cut-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light" data-i18n="cut.eyebrow">Cutters</p>
+    <h2 id="cut-h" data-i18n="cut.title">Which cutters work with Recorte?</h2>
+
+    <ul class="machines">
+      <li>
+        <span class="pill pill--ok" data-i18n="cut.ok">Supported</span>
+        <h3>Liyu GF-1261</h3>
+        <p data-i18n="cut.1.d">Cut and Print &amp; Cut over USB. The jobs Recorte sends match SignMaster's byte for byte.</p>
+      </li>
+      <li>
+        <span class="pill" data-i18n="cut.untested">Not tried yet</span>
+        <h3 data-i18n="cut.2.t">Other Liyu GF-series</h3>
+        <p data-i18n="cut.2.d">They may work, but nobody has tried them. If you own one, tell us how it goes.</p>
+      </li>
+      <li>
+        <span class="pill" data-i18n="cut.ask">On request</span>
+        <h3 data-i18n="cut.3.t">Other HPGL cutters</h3>
+        <p data-i18n="cut.3.d">Recorte includes a serial-port transport for HPGL cutters. Each machine still needs to be checked with someone who owns it.</p>
+      </li>
+    </ul>
+
+    <div class="request">
+      <div>
+        <h3 data-i18n="req.title">Ask for your cutter</h3>
+        <p data-i18n="req.lead">Cutter makers rarely publish how their machines talk, so each new model starts with information from someone who owns one. Open a request on GitHub and include:</p>
+        <ol class="req-list">
+          <li data-i18n="req.1">The brand and model, and how it connects (USB, serial or network).</li>
+          <li data-i18n="req.2">The software you use with it today, and on which system.</li>
+          <li data-i18n="req.3">A job file saved from that software (PLT or HPGL) for a simple shape, such as a square.</li>
+          <li data-i18n-html="req.4">If you can, a USB capture of that job being sent. The <a href="https://github.com/cookiebytespt/Recorte/blob/main/docs/debugging/README.md">debugging write-up</a> shows how to make one.</li>
+          <li data-i18n="req.5">Whether you can try test builds on your machine.</li>
+        </ol>
+        <p class="fine" data-i18n="req.note">Requests that come with a job file and someone willing to test move fastest.</p>
+      </div>
+      <div class="request__cta">
+        <a class="btn btn--light" href="https://github.com/cookiebytespt/Recorte/issues/new?title=Cutter%20request%3A%20%5Bbrand%20and%20model%5D&amp;body=%2A%2ACutter%2A%2A%20%28brand%20and%20model%29%3A%0A%0A%2A%2AConnection%2A%2A%20%28USB%20%2F%20serial%20%2F%20network%29%3A%0A%0A%2A%2ASoftware%20used%20with%20it%20today%2A%2A%20%28and%20operating%20system%29%3A%0A%0A%2A%2AJob%20file%2A%2A%3A%20attach%20a%20PLT%2FHPGL%20file%20saved%20from%20that%20software%20for%20a%20simple%20shape%2C%20such%20as%20a%20square.%0A%0A%2A%2AUSB%20capture%2A%2A%20%28optional%29%3A%20see%20docs%2Fdebugging%2FREADME.md%20for%20how%20to%20make%20one.%0A%0A%2A%2ACan%20you%20try%20test%20builds%20on%20your%20machine%3F%2A%2A%0A" data-i18n="req.cta">Request a cutter on GitHub</a>
+        <a class="btn btn--outline" href="mailto:hello@cookiebytes.pt?subject=Recorte%3A%20cutter%20request" data-i18n="req.cta2">Or email hello@cookiebytes.pt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section class="support" id="support" aria-labelledby="sup-h">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="sup.eyebrow">Support</p>
+    <h2 id="sup-h" data-i18n="sup.title">Help when something doesn't cut right.</h2>
+    <div class="trio">
+      <article class="sticker">
+        <h3 data-i18n="sup.1.t">Report a problem</h3>
+        <p data-i18n-html="sup.1.d">In the app, choose <strong>Help ▸ Report a Problem…</strong>, or open an issue on GitHub.</p>
+        <a class="link" href="https://github.com/cookiebytespt/Recorte/issues/new" data-i18n="sup.1.a">Open an issue</a>
+      </article>
+      <article class="sticker">
+        <h3 data-i18n="sup.2.t">Read the help</h3>
+        <p data-i18n="sup.2.d">Connecting, cutting, Print &amp; Cut, speed and pressure, and a troubleshooting table. The same page opens from the app's Help menu.</p>
+        <a class="link" href="https://github.com/cookiebytespt/Recorte#troubleshooting" data-i18n="sup.2.a">Open the help page</a>
+      </article>
+      <article class="sticker">
+        <h3 data-i18n="sup.3.t">Talk to us</h3>
+        <p data-i18n="sup.3.d">Recorte is made by CookieBytes, a small studio in Portugal. Write to us in English or Portuguese.</p>
+        <a class="link" href="mailto:hello@cookiebytes.pt?subject=Recorte">hello@cookiebytes.pt</a>
+      </article>
+    </div>
+
+    <p class="status" data-i18n-html="sup.status"><strong>Early development.</strong> Not every feature has been tried on the machine yet. The app isn't notarised yet either: the first time you open it, right-click it and choose <strong>Open</strong>.</p>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="get" aria-labelledby="get-h">
+  <div class="wrap get__in">
+    <img src="assets/icon.svg" width="96" height="96" alt="">
+    <h2 id="get-h" data-i18n="get.title">Download Recorte</h2>
+    <p data-i18n="get.d">Unzip it and move Recorte to Applications. Needs macOS 14 or later.</p>
+    <p class="licence" data-i18n-html="get.lic">The source is on GitHub under the <a href="https://github.com/cookiebytespt/Recorte/blob/main/LICENSE">MIT licence with the Commons Clause</a>: use it, study it and change it, but don't sell it.</p>
+    <div class="cta cta--center">
+      <a class="btn" href="https://github.com/cookiebytespt/Recorte/releases/latest" data-i18n="get.cta">Get the latest release</a>
+      <a class="btn btn--ghost" href="https://github.com/cookiebytespt/Recorte" data-i18n="hero.cta2">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p><span data-i18n="foot.made">Made by</span> <a href="https://cookiebytes.pt">CookieBytes</a> · software development &amp; home automations</p>
+    <p class="foot__links">
+      <a href="https://github.com/cookiebytespt/Recorte">GitHub</a>
+      <a href="https://github.com/cookiebytespt/Recorte/blob/main/LICENSE" data-i18n="foot.lic">Licence</a>
+      <a href="https://www.instagram.com/cookiebytes.pt">Instagram</a>
+      <a href="mailto:hello@cookiebytes.pt">hello@cookiebytes.pt</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
