@@ -119,12 +119,24 @@
     "get.lic": "O código está no GitHub sob a <a href=\"https://github.com/cookiebytespt/Recorte/blob/main/LICENSE\">licença MIT com a Commons Clause</a>: pode usá-lo, estudá-lo e alterá-lo, mas não vendê-lo.",
     "foot.lic": "Licença",
 
+    "nav.help": "Ajuda",
+    "help.doc.title": "Ajuda do Recorte — ligar, cortar, Imprimir e Cortar e resolução de problemas",
+    "help.doc.desc": "Como usar o Recorte: instalar, ligar a Liyu GF-1261, desenhar e importar, cortar vinil, Imprimir e Cortar, definir velocidade, pressão e lâmina, e resolver os problemas mais comuns.",
+    "help.toc": "Nesta página",
+    "help.eyebrow": "Ajuda",
+    "help.title": "Ajuda do Recorte",
+    "help.lead": "Da instalação da app a um corte limpo. A mesma página abre a partir do menu Ajuda da app.",
+    "help.more.t": "Ainda com dúvidas?",
+    "help.more.d": "Abra uma issue no GitHub ou escreva para <a href=\"mailto:hello@cookiebytes.pt?subject=Recorte\">hello@cookiebytes.pt</a>. Se a máquina não responder, anexe o ficheiro de registo da janela de diagnóstico.",
+    "help.more.cutter": "Pedir outra máquina",
+
     "foot.made": "Feito pela"
   };
 
   var nodes = [].slice.call(document.querySelectorAll("[data-i18n],[data-i18n-html],[data-i18n-alt]"));
   var meta = document.querySelector('meta[name="description"]');
   var en = { title: document.title, desc: meta ? meta.content : "" };
+  var page = document.body.classList.contains("help-page") ? "help." : "";
 
   // Remember the English that shipped in the HTML so switching back needs no second dictionary.
   nodes.forEach(function (n) {
@@ -142,8 +154,12 @@
       if ((k = n.getAttribute("data-i18n-alt"))) n.setAttribute("alt", isPt && pt[k] ? pt[k] : n._enAlt);
     });
     document.documentElement.lang = isPt ? "pt-PT" : "en";
-    document.title = isPt ? pt["doc.title"] : en.title;
-    if (meta) meta.content = isPt ? pt["doc.desc"] : en.desc;
+    document.title = isPt ? pt[page + "doc.title"] : en.title;
+    if (meta) meta.content = isPt ? pt[page + "doc.desc"] : en.desc;
+    // Whole blocks that exist once per language (the help text).
+    [].forEach.call(document.querySelectorAll("[data-only]"), function (n) {
+      n.hidden = n.getAttribute("data-only") !== lang;
+    });
     [].forEach.call(document.querySelectorAll(".lang button"), function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang));
     });
