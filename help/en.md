@@ -2,9 +2,18 @@
 
 ### Install
 
-Download `Recorte-<version>.zip` from the [latest release](https://github.com/cookiebytespt/Recorte/releases/latest),
-unzip it and move **Recorte.app** to Applications. The app isn't notarised yet, so the first
-time **right-click it ▸ Open** (or run `xattr -dr com.apple.quarantine /Applications/Recorte.app`).
+With [Homebrew](https://brew.sh):
+
+```
+brew install --cask cookiebytespt/tap/recorte
+```
+
+Or download `Recorte-<version>.zip` from the [latest release](https://github.com/cookiebytespt/Recorte/releases/latest),
+unzip it and move **Recorte.app** to Applications.
+
+The app isn't notarised yet. Homebrew clears the block for you; if you installed from the zip, or macOS
+still stops the first launch, **right-click the app ▸ Open** (or run
+`xattr -dr com.apple.quarantine /Applications/Recorte.app`).
 
 The **Getting Started** window opens on the first launch with the four steps below.
 

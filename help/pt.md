@@ -2,9 +2,18 @@
 
 ### Instalar
 
-Descarregue `Recorte-<versão>.zip` da [versão mais recente](https://github.com/cookiebytespt/Recorte/releases/latest),
-descomprima-o e mova o **Recorte.app** para a pasta Aplicações. A app ainda não está notarizada, por isso da
-primeira vez **clique-lhe com o botão direito ▸ Abrir** (ou execute `xattr -dr com.apple.quarantine /Applications/Recorte.app`).
+Com o [Homebrew](https://brew.sh):
+
+```
+brew install --cask cookiebytespt/tap/recorte
+```
+
+Ou descarregue `Recorte-<versão>.zip` da [versão mais recente](https://github.com/cookiebytespt/Recorte/releases/latest),
+descomprima-o e mova o **Recorte.app** para a pasta Aplicações.
+
+A app ainda não está notarizada. O Homebrew remove o bloqueio por si; se instalou a partir do zip, ou se o
+macOS impedir o primeiro arranque, **clique na app com o botão direito ▸ Abrir** (ou execute
+`xattr -dr com.apple.quarantine /Applications/Recorte.app`).
 
 A janela **Primeiros passos** abre no primeiro arranque com os quatro passos abaixo.
 

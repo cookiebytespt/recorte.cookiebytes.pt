@@ -113,9 +113,16 @@
     "sup.status": "<strong>Em desenvolvimento inicial.</strong> Nem todas as funcionalidades foram ainda experimentadas na máquina. A app também ainda não está notarizada: da primeira vez que a abrir, clique-lhe com o botão direito e escolha <strong>Abrir</strong>.",
 
     "get.title": "Descarregar o Recorte",
-    "get.d": "Descomprima e mova o Recorte para a pasta Aplicações. Requer macOS 14 ou posterior.",
-    "get.cta": "Obter a versão mais recente",
-
+    "get.d": "Duas formas de instalar. Requer macOS 14 ou posterior.",
+    "get.brew.tag": "Opção 1",
+    "get.brew.t": "Com o Homebrew",
+    "get.brew.d": "Cole isto no Terminal. O Homebrew instala o Recorte e pode atualizá-lo mais tarde.",
+    "get.copy": "Copiar",
+    "get.copied": "Copiado",
+    "get.gh.tag": "Opção 2",
+    "get.gh.t": "Descarregar do GitHub",
+    "get.gh.d": "Obtenha o zip, descomprima-o e mova o Recorte para a pasta Aplicações. Da primeira vez, clique na app com o botão direito e escolha <strong>Abrir</strong>.",
+    "get.cta": "Descarregar do GitHub",
     "get.lic": "O código está no GitHub sob a <a href=\"https://github.com/cookiebytespt/Recorte/blob/main/LICENSE\">licença MIT com a Commons Clause</a>: pode usá-lo, estudá-lo e alterá-lo, mas não vendê-lo.",
     "foot.lic": "Licença",
 
@@ -171,6 +178,19 @@
   var q = new URLSearchParams(location.search).get("lang");
   var lang = q === "pt" || q === "en" ? q : saved() || ((navigator.language || "").toLowerCase().indexOf("pt") === 0 ? "pt" : "en");
   if (lang === "pt") apply("pt");
+
+  // Copy buttons (the Homebrew command).
+  [].forEach.call(document.querySelectorAll("[data-copy]"), function (b) {
+    b.addEventListener("click", function () {
+      var text = document.querySelector(b.getAttribute("data-copy")).textContent;
+      var done = function () {
+        var label = b.textContent;
+        b.textContent = document.documentElement.lang === "en" ? b.getAttribute("data-done") : pt["get.copied"];
+        setTimeout(function () { b.textContent = label; }, 1600);
+      };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
+    });
+  });
 
   [].forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () {

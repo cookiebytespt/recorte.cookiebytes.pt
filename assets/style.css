@@ -263,6 +263,18 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 }
 .get__in p { color: var(--muted); }
 .get__in .cta { margin-top: .8rem; }
+.ways { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; width: min(900px, 100%); margin: 1.2rem 0 .6rem; text-align: left; }
+.way { background: var(--paper); border-radius: 18px; padding: 1.5rem; display: flex; flex-direction: column; gap: .6rem; align-items: flex-start; min-width: 0; }
+.way .tag { font: 500 .78rem var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--coral-deep); }
+.way p { color: var(--muted); }
+.way .btn, .way .cmd { margin-top: auto; }
+.way > p:not(.tag) { margin-bottom: .6rem; }
+.cmd { display: flex; align-items: center; gap: .6rem; width: 100%; background: var(--ink); border-radius: 12px; padding: .55rem .55rem .55rem 1rem; }
+.cmd code { flex: 1; min-width: 0; white-space: normal; overflow-wrap: anywhere; line-height: 1.5; background: none; border: 0; padding: 0; color: #fff; font-size: .86rem; user-select: all; }
+.copy { font: 500 .8rem var(--body); color: var(--ink); background: #fff; border: 0; border-radius: 8px; padding: .4rem .7rem; cursor: pointer; }
+.copy:hover { background: var(--backing); }
+.prose pre { margin: 1rem 0 0; overflow-x: auto; background: var(--ink); border-radius: 12px; padding: .8rem 1.1rem; }
+.prose pre code { background: none; border: 0; padding: 0; color: #fff; white-space: pre; user-select: all; }
 .get__in .licence { font-size: .95rem; max-width: 52ch; }
 .get__in .licence a { color: var(--coral-deep); text-underline-offset: 3px; }
 
@@ -318,7 +330,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 @media (max-width: 900px) {
   .nav__links { display: none; }
   .nav__right { margin-left: auto; }
-  .trio, .machines, .grid { grid-template-columns: 1fr; }
+  .trio, .machines, .grid, .ways { grid-template-columns: 1fr; }
   .grid li, .grid li:not(:nth-child(3n+1)) { padding: 1.3rem 0; border-left: 0; }
   .row, .how__in, .request { grid-template-columns: 1fr; }
   .row--flip .row__text { order: 0; }

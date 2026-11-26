@@ -41,7 +41,7 @@
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="pt" aria-pressed="false">PT</button>
       </div>
-      <a class="btn btn--small" href="https://github.com/cookiebytespt/Recorte/releases/latest" data-i18n="nav.download">Download</a>
+      <a class="btn btn--small" href="#download" data-i18n="nav.download">Download</a>
     </div>
   </div>
 </header>
@@ -55,7 +55,7 @@
     <h1 data-i18n="hero.title">Your vinyl cutter, natively on the Mac.</h1>
     <p class="lead" data-i18n-html="hero.lead">Recorte is a native macOS app for vinyl cutters, made for designers. Draw or import your artwork, press <kbd>⌘P</kbd>, and it walks you through loading the machine. Print &amp; Cut included, with no Windows VM.</p>
     <div class="cta">
-      <a class="btn" href="https://github.com/cookiebytespt/Recorte/releases/latest">
+      <a class="btn" href="#download">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
         <span data-i18n="hero.cta">Download for macOS</span>
       </a>
@@ -270,16 +270,31 @@
 </section>
 
 <!-- DOWNLOAD -->
-<section class="get" aria-labelledby="get-h">
+<section class="get" id="download" aria-labelledby="get-h">
   <div class="wrap get__in">
     <img src="assets/icon.svg" width="96" height="96" alt="">
     <h2 id="get-h" data-i18n="get.title">Download Recorte</h2>
-    <p data-i18n="get.d">Unzip it and move Recorte to Applications. Needs macOS 14 or later.</p>
-    <p class="licence" data-i18n-html="get.lic">The source is on GitHub under the <a href="https://github.com/cookiebytespt/Recorte/blob/main/LICENSE">MIT licence with the Commons Clause</a>: use it, study it and change it, but don't sell it.</p>
-    <div class="cta cta--center">
-      <a class="btn" href="https://github.com/cookiebytespt/Recorte/releases/latest" data-i18n="get.cta">Get the latest release</a>
-      <a class="btn btn--ghost" href="https://github.com/cookiebytespt/Recorte" data-i18n="hero.cta2">View on GitHub</a>
+    <p data-i18n="get.d">Two ways to install it. Needs macOS 14 or later.</p>
+
+    <div class="ways">
+      <div class="way">
+        <p class="tag" data-i18n="get.brew.tag">Option 1</p>
+        <h3 data-i18n="get.brew.t">With Homebrew</h3>
+        <p data-i18n="get.brew.d">Paste this in Terminal. Homebrew installs Recorte and can update it later.</p>
+        <div class="cmd">
+          <code id="brew-cmd">brew install --cask cookiebytespt/tap/recorte</code>
+          <button type="button" class="copy" data-copy="#brew-cmd" data-i18n="get.copy" data-done="Copied">Copy</button>
+        </div>
+      </div>
+      <div class="way">
+        <p class="tag" data-i18n="get.gh.tag">Option 2</p>
+        <h3 data-i18n="get.gh.t">Download from GitHub</h3>
+        <p data-i18n-html="get.gh.d">Get the zip, unzip it and move Recorte to Applications. The first time, right-click the app and choose <strong>Open</strong>.</p>
+        <a class="btn" href="https://github.com/cookiebytespt/Recorte/releases/latest" data-i18n="get.cta">Download from GitHub</a>
+      </div>
     </div>
+
+    <p class="licence" data-i18n-html="get.lic">The source is on GitHub under the <a href="https://github.com/cookiebytespt/Recorte/blob/main/LICENSE">MIT licence with the Commons Clause</a>: use it, study it and change it, but don't sell it.</p>
   </div>
 </section>
 
